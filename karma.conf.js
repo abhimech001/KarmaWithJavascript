@@ -38,22 +38,22 @@ module.exports = function(config) {
     reporters: ['progress','coverage'],
 
     
-    //coverageReporter: {
+    coverageReporter: {
 
-       // type: 'lcovonly',
-       // dir: 'coverage'
-   // },
+       type: 'lcovonly',
+       dir: 'coverage'
+    },
     
-        coverageReporter: {
+       // coverageReporter: {
       // specify a common output directory 
-      dir: 'coverage',
-      reporters: [
+      //dir: 'coverage',
+      //reporters: [
         // reporters not supporting the `file` property 
-        { type: 'html', subdir: 'report-html' },
-        { type: 'lcov', subdir: 'report-lcov' },
-        { type: 'lcovonly', subdir: '.', file: 'report-lcovonly.txt' },
-        ]
-      },
+       // { type: 'html', subdir: 'report-html' },
+       // { type: 'lcov', subdir: 'report-lcov' },
+       // { type: 'lcovonly', subdir: '.', file: 'report-lcovonly.txt' },
+       // ]
+     // },
     // web server port
     port: 9876,
 
